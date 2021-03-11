@@ -1,6 +1,8 @@
 import React from "react";
 
 export default function Modal(props) {
+
+  // calling the toggle function in App.js to update state
   const handleClick = () => {
     props.toggle();
   };
@@ -18,14 +20,13 @@ export default function Modal(props) {
           </td>
         </tr>
       )
-      // return <div key={index}>{response}</div>
     });
     return mapResults;
   };
 
   return (
     <>
-      <div className="modal" onClick={handleClick}>
+      <div className="modal">
         <table>
           <thead>
             <tr>

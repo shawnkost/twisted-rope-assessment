@@ -59,12 +59,12 @@ input {
 
 button {
   cursor: pointer;
-  /* background-color: #f25f25; */
   color: white;
   background-color: #585858;
   margin-bottom: .5rem;
   padding: .3em .7em;
   border-radius: 10px;
+  outline: none;
 }
 
 button:hover {
@@ -116,4 +116,5 @@ tbody > tr:nth-child(2n) {
 
 .err {
   color: red;
+  margin-bottom: 1rem;
 }
