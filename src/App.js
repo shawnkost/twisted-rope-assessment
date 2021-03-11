@@ -9,7 +9,6 @@ function App() {
   const [results, setResults] = useState([]);
   const [allResults, setAllResults] = useState([]);
   const [toggleModal, setToggleModal] = useState(false);
-  const [errMsg, setErrMsg] = useState("");
 
   const viewPastResponses = () => {
     setToggleModal(!toggleModal);
@@ -17,7 +16,13 @@ function App() {
 
   const grabValue = (value) => {
     setResults(value.answer);
-    setAllResults((allResults) => [value.answer, ...allResults]);
+    if (allResults.length <= 9) {
+      setAllResults((allResults) => [value, ...allResults]);
+    } else {
+      const arr = allResults;
+      arr.pop();
+      setAllResults((arr) => [value, ...arr]);
+    }
   };
 
   const updateLoader = (value) => {
@@ -25,17 +30,16 @@ function App() {
   };
 
   return (
-    <div className="text-center">
+    <div className="container">
       <h1 className="font-60">Magic 8-Ball</h1>
-      <div className="text-center d-inline-block eight-ball-container">
+      <div className="eight-ball-container">
         <img
           src={magic8Ball}
           alt="magic 8 ball"
-          style={{ width: "100%" }}
-          className={loader ? "shake" : ""}
+          className={loader ? "shake eight-ball-img" : "eight-ball-img"}
         ></img>
       </div>
-      <div className="mb-2 font-20">{results}</div>
+      <div className="font-20 answer">{results}</div>
       <Form results={grabValue} loading={updateLoader} />
       <div>
         <button onClick={viewPastResponses} className="font-20">

@@ -7,7 +7,18 @@ export default function Modal(props) {
 
   const mapResponses = () => {
     const mapResults = props.allResults.map((response, index) => {
-      return <div key={index}>{response}</div>
+      console.log("response", response);
+      return (
+        <tr key={index}>
+          <td className="table-question">
+            {response.question}
+          </td>
+          <td className="table-answer">
+            {response.answer}
+          </td>
+        </tr>
+      )
+      // return <div key={index}>{response}</div>
     });
     return mapResults;
   };
@@ -15,7 +26,15 @@ export default function Modal(props) {
   return (
     <>
       <div className="modal" onClick={handleClick}>
-        {mapResponses()}
+        <table>
+          <thead>
+            <tr>
+              <th>Question</th>
+              <th>Answer</th>
+            </tr>
+          </thead>
+          <tbody>{mapResponses()}</tbody>
+        </table>
       </div>
     </>
   );
