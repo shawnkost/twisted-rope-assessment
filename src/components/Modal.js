@@ -35,6 +35,7 @@ export default function Modal(props) {
           </thead>
           <tbody>{mapResponses()}</tbody>
         </table>
+        <button className="font-20" onClick={handleClick}>Exit</button>
       </div>
     </>
   );

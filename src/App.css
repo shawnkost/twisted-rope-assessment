@@ -59,14 +59,17 @@ input {
 
 button {
   cursor: pointer;
-  background-color: #f25f25;
+  /* background-color: #f25f25; */
+  color: white;
+  background-color: #585858;
   margin-bottom: .5rem;
   padding: .3em .7em;
   border-radius: 10px;
 }
 
 button:hover {
-  background-color: #585858;
+  /* background-color: #585858; */
+  background-color: #f25f25;
 }
 
 .modal {
@@ -83,23 +86,23 @@ button:hover {
   background: white;
   box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
   text-align: center;
-  background-color: #585858;
+  border-radius: 10px;
 }
 
 table {
   border-collapse: collapse;
   width: 100%;
-  /* color: white; */
-  background-color: white;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
-tr {
-  border-top: 2px solid #585858;
+tbody > tr {
+  border-top: 2px solid black;
 }
 
 .table-question {
   background-color: #25b8f2;
+  border-right: 2px solid black;
 }
 
 .table-answer {
