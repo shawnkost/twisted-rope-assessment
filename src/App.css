@@ -37,7 +37,7 @@ body {
 .eight-ball-container {
   display: inline-block;
   width: 285px;
-  max-width: 35%;
+  max-width: 100%;
   text-align: center;
 }
 

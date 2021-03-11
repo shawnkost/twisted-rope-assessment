@@ -14,6 +14,10 @@ function App() {
     setToggleModal(!toggleModal);
   };
 
+  const clearResponses = () => {
+    setAllResults("");
+  }
+
   const grabValue = (value) => {
     setResults(value.answer);
     if (allResults.length <= 9) {
@@ -46,7 +50,7 @@ function App() {
           View previous results
         </button>
         {toggleModal ? (
-          <Modal toggle={viewPastResponses} allResults={allResults} />
+          <Modal toggle={viewPastResponses} allResults={allResults} clear={clearResponses} />
         ) : null}
       </div>
     </div>
