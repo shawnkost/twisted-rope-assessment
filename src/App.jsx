@@ -10,6 +10,7 @@ function App() {
   const [allResults, setAllResults] = useState([]);
   const [toggleModal, setToggleModal] = useState(false);
 
+  //toggles modal with past 10 responses
   const viewPastResponses = () => {
     setToggleModal(!toggleModal);
   };
@@ -18,6 +19,7 @@ function App() {
     setAllResults("");
   }
 
+  //adds to state arr if there is 10 values or less, otherwise we remove the last element and push
   const grabValue = (value) => {
     setResults(value.answer);
     if (allResults.length <= 9) {

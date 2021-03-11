@@ -1,15 +1,15 @@
 import React from "react";
 
 export default function Modal(props) {
-
   // calling the toggle function in App.js to update state
   const handleClick = () => {
     props.toggle();
   };
 
+  // calling the clear function in App.js to update state
   const clearResponses = () => {
     props.clear();
-  }
+  };
 
   const mapResponses = () => {
     if (props.allResults) {
@@ -39,9 +39,12 @@ export default function Modal(props) {
           <tbody>{mapResponses()}</tbody>
         </table>
         <div>
-          {props.allResults ? <button className="font-20" onClick={clearResponses}>
-            Clear Responses
-          </button> : null}
+          {/* The clear responses button only renders if the user has asked questions previously*/}
+          {props.allResults.length > 0 ? (
+            <button className="font-20" onClick={clearResponses}>
+              Clear Responses
+            </button>
+          ) : null}
         </div>
         <div>
           <button className="font-20" onClick={handleClick}>
