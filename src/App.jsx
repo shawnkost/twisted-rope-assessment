@@ -41,7 +41,7 @@ function App() {
       <div className="eight-ball-container">
         <img
           src={magic8Ball}
-          alt="magic 8 ball"
+          alt="magic 8-ball"
           className={loader ? "shake eight-ball-img" : "eight-ball-img"}
         ></img>
       </div>

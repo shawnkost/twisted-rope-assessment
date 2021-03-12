@@ -32,17 +32,22 @@ export default function Form(props) {
   return (
     <form onSubmit={grabResults}>
       <div className="text-center">
-        <input
-          type="text"
-          placeholder="What is your question?"
-          className="text-center mb-2 font-20"
-          onChange={handleChange}
-          value={question}
-          required
-        ></input>
+        <label htmlFor="question">
+          <input
+            type="text"
+            id="question"
+            placeholder="What is your question?"
+            className="text-center mb-2 font-20"
+            onChange={handleChange}
+            value={question}
+            required
+          ></input>
+        </label>
         {errMsg && <div className="err mb-2"> {errMsg} </div>}
         <div>
-          <button type="submit" className="mb-2 font-20">Ask the Magic 8-Ball</button>
+          <button type="submit" className="mb-2 font-20">
+            Ask the Magic 8-Ball
+          </button>
         </div>
       </div>
     </form>
