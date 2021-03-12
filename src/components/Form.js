@@ -7,7 +7,7 @@ export default function Form(props) {
   const handleChange = event => {
     setQuestion(event.target.value);
   }
-  //
+  //check for question mark and make fetch request, otherwise throw error
   const grabResults = async event => {
     event.preventDefault();
     setErrMsg("");

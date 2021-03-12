@@ -109,11 +109,6 @@ tbody > tr {
   background-color: #f25f25;
 }
 
-tbody > tr:nth-child(2n) {
-  background-color: #25b8f2;
-  /* color: white; */
-}
-
 .err {
   color: red;
   margin-bottom: 1rem;

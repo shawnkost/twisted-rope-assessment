@@ -15,8 +15,9 @@ function App() {
     setToggleModal(!toggleModal);
   };
 
+  //clear allResults arr
   const clearResponses = () => {
-    setAllResults("");
+    setAllResults([]);
   }
 
   //adds to state arr if there is 10 values or less, otherwise we remove the last element and push
