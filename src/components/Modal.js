@@ -40,7 +40,7 @@ export default function Modal(props) {
           <tbody>{mapResponses()}</tbody>
         </table>
         <div>
-          {/* The clear responses button only renders if the user has asked questions previously*/}
+          {/* The clear responses button only renders if the user has asked questions previously */}
           {props.allResults.length > 0 && (<button className="font-20" onClick={clearResponses}>Clear Responses</button>)}
         </div>
         <div>

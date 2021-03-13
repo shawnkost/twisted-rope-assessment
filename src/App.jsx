@@ -41,6 +41,7 @@ function App() {
     <div className="container">
       <h1 className="font-60">Magic 8-Ball</h1>
       <div className="eight-ball-container">
+        {/* 8-ball img gets a class of shake to trigger animation if loader is true */}
         <img
           src={magic8Ball}
           alt="magic 8-ball"
