@@ -32,6 +32,7 @@ function App() {
     }
   };
 
+  //gets called in Form component with either true/false to trigger keyframe animation
   const updateLoader = (value) => {
     setLoader(value);
   };
@@ -52,9 +53,7 @@ function App() {
         <button onClick={viewPastResponses} className="font-20">
           View previous results
         </button>
-        {toggleModal ? (
-          <Modal toggle={viewPastResponses} allResults={allResults} clear={clearResponses} />
-        ) : null}
+        {toggleModal && (<Modal toggle={viewPastResponses} allResults={allResults} clear={clearResponses} />)}
       </div>
     </div>
   );
