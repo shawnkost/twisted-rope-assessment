@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/twisted-rope-assessment/static/css/main.e50cbb04.chunk.css",
+    "main.js": "/twisted-rope-assessment/static/js/main.0a30d8d7.chunk.js",
+    "main.js.map": "/twisted-rope-assessment/static/js/main.0a30d8d7.chunk.js.map",
+    "runtime-main.js": "/twisted-rope-assessment/static/js/runtime-main.938cb9b7.js",
+    "runtime-main.js.map": "/twisted-rope-assessment/static/js/runtime-main.938cb9b7.js.map",
+    "static/js/2.54c8ab0c.chunk.js": "/twisted-rope-assessment/static/js/2.54c8ab0c.chunk.js",
+    "static/js/2.54c8ab0c.chunk.js.map": "/twisted-rope-assessment/static/js/2.54c8ab0c.chunk.js.map",
+    "index.html": "/twisted-rope-assessment/index.html",
+    "static/css/main.e50cbb04.chunk.css.map": "/twisted-rope-assessment/static/css/main.e50cbb04.chunk.css.map",
+    "static/js/2.54c8ab0c.chunk.js.LICENSE.txt": "/twisted-rope-assessment/static/js/2.54c8ab0c.chunk.js.LICENSE.txt",
+    "static/media/8ball.ce434eb1.png": "/twisted-rope-assessment/static/media/8ball.ce434eb1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.938cb9b7.js",
+    "static/js/2.54c8ab0c.chunk.js",
+    "static/css/main.e50cbb04.chunk.css",
+    "static/js/main.0a30d8d7.chunk.js"
+  ]
+}
