@@ -1,3 +1,32 @@
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #25b8f2;
+}
+
+.font-60 {
+  font-size: 60px;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.container {
+  text-align: center;
+}
+
+.eight-ball-container {
+  display: inline-block;
+  width: 285px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.eight-ball-img {
+  width: 100%;
+}
+
 .shake {
   animation: shake 1s;
 }
@@ -38,42 +67,16 @@
   }
 }
 
-body {
-  font-family: "Josefin Sans", sans-serif;
-  background-color: #25b8f2;
-}
-
-.font-60 {
-  font-size: 60px;
-}
-
-.font-20 {
-  font-size: 20px;
-}
-
-.container {
-  text-align: center;
-}
-
-.eight-ball-container {
-  display: inline-block;
-  width: 285px;
-  max-width: 100%;
-  text-align: center;
-}
-
-.eight-ball-img {
-  width: 100%;
-}
-
 .answer {
   margin-bottom: 1rem;
 }
 
 input {
-  border-radius: 10px;
   outline: none;
+  border: none;
+  border-radius: 50px;
   margin-bottom: 1rem;
+  padding: 0.4em;
   text-align: center;
 }
 

@@ -54,6 +54,7 @@ function App() {
         <button onClick={viewPastResponses} className="font-20">
           View previous results
         </button>
+        {/* only render the modal when view previous results button is clicked */}
         {toggleModal && (<Modal toggle={viewPastResponses} allResults={allResults} clear={clearResponses} />)}
       </div>
     </div>

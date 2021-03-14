@@ -2,11 +2,10 @@ import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import Modal from "./Modal";
 
-const viewPastResponses = jest.fn();
-const allResults = [];
-const clearResponses = jest.fn();
-
 test("renders the correct content on page load", () => {
+  const viewPastResponses = jest.fn();
+  const allResults = [];
+  const clearResponses = jest.fn();
   render(
     <Modal
       toggle={viewPastResponses}

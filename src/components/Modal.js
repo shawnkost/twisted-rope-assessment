@@ -29,7 +29,7 @@ export default function Modal(props) {
 
   return (
     <>
-      <div className="modal">
+      <div className="modal font-20">
         <table>
           <thead>
             <tr>
